@@ -6,7 +6,7 @@ Globals
 ====== */
 
 html {
-    height: 100%;
+    min-height: 100%;
 }
 
 :root {
@@ -41,9 +41,9 @@ body {
     line-height: 1.6;
     font-family: 'Inter', sans-serif;
     font-size: 24px;
-    height: 100vh;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .inline-block {
@@ -160,9 +160,11 @@ body {
     .container {
         margin: 0 auto;
         background-image: none;
+        min-height: 800px;
     }
     .testimonials {
         margin-top: 2em;
+        padding: 2em 0;
         width: 100%;
         position: relative;
         left: 0;
