@@ -7,6 +7,7 @@ Globals
 
 html {
     min-height: 100%;
+    position: fixed;
 }
 
 :root {
@@ -54,8 +55,6 @@ body {
 .container {
     color: var(--dark-clr);
     position: relative;
-    min-height: 100vh;
-    padding-bottom: 2em;
 }
 
 .testimonials {
@@ -133,10 +132,10 @@ body {
 .attribution {
     font-size: 11px;
     text-align: center;
-    position: relative;
-    ;
+    position: fixed;
     bottom: 0;
-    width: 100%;
+    left: 0;
+    right: 0;
 }
 
 .attribution a {
@@ -145,14 +144,15 @@ body {
 
 @media(max-width: 990px) {
     body {
+        margin: 0;
         font-size: 18px;
         line-height: 1.5;
-        min-height: 100%;
         background-image: none;
         background-image: url(images/pattern-curve.svg );
         background-repeat: no-repeat;
-        background-position: left bottom;
+        background-position: bottom left;
         background-size: contain;
+        position: relative;
     }
     .block {
         display: block;
@@ -201,7 +201,6 @@ body {
         padding: .9em 1.2em;
     }
     .attribution {
-        position: relative;
         bottom: 0;
     }
 }
