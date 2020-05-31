@@ -41,9 +41,10 @@ body {
     line-height: 1.6;
     font-family: 'Inter', sans-serif;
     font-size: 24px;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
+    background-image: url(images/pattern-curve.svg );
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: left;
 }
 
 .inline-block {
@@ -52,12 +53,9 @@ body {
 
 .container {
     color: var(--dark-clr);
-    background-image: url(images/pattern-curve.svg );
-    background-repeat: no-repeat;
-    background-position-y: bottom;
-    background-position-x: left;
-    min-height: 100%;
-    flex: 1 0 auto;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 2em;
 }
 
 .testimonials {
@@ -135,8 +133,10 @@ body {
 .attribution {
     font-size: 11px;
     text-align: center;
-    margin: 0 auto;
-    flex-shrink: 0;
+    position: relative;
+    ;
+    bottom: 0;
+    width: 100%;
 }
 
 .attribution a {
@@ -147,7 +147,12 @@ body {
     body {
         font-size: 18px;
         line-height: 1.5;
+        min-height: 100%;
         background-image: none;
+        background-image: url(images/pattern-curve.svg );
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        background-size: contain;
     }
     .block {
         display: block;
@@ -155,11 +160,9 @@ body {
     .container {
         margin: 0 auto;
         background-image: none;
-        min-height: 800px;
-        background-image: url(images/pattern-curve.svg);
-        background-repeat: no-repeat;
-        background-position: bottom left;
-        background-size: contain;
+        position: relative;
+        min-height: 100%;
+        padding-bottom: 2rem;
     }
     .testimonials {
         margin-top: 2em;
@@ -196,5 +199,9 @@ body {
     }
     .btn {
         padding: .9em 1.2em;
+    }
+    .attribution {
+        position: relative;
+        bottom: 0;
     }
 }
